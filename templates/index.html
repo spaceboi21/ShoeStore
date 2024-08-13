@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Details</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ALWAYS LEGIT</h1>
+        </div>
+        <div class="main-content">
+            <div class="shoe-details">
+                <h2 id="shoe-name">Nike SB x Jordan 4 Retro SP 'Pine Green'</h2>
+                <div class="details">
+                    <div class="sku-size">
+                        <p>Sku <span id="sku"></span></p>
+                        <p>Size <span id="size"></span></p>
+                    </div>
+                    <p>Release Date: <span id="release-date"></span></p>
+                    <p>Gender: <span id="gender"></span></p>
+                </div>
+                <img id="shoe-image" src="/static/images/placeholder.png" alt="Shoe Image">
+                <div class="prices">
+                    <div class="price-box">
+                        <p>App Price</p>
+                        <p id="app-price"></p>
+                    </div>
+                    <div class="price-box">
+                        <p>Recent Sale</p>
+                        <p id="recent-sale"></p>
+                    </div>
+                    <div class="price-box">
+                        <p>Consign Price</p>
+                        <p id="consign-price"></p>
+                    </div>
+                </div>
+                <div class="liquidity">
+                    <p>Liquidity</p>
+                    <input type="range" min="0" max="100" value="50" id="liquidity-bar" enabled>
+                </div>
+                <div class="next-sneaker">
+                    <button id="next-sneaker">Next Sneaker</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    background-color: #000;
+    color: #00ffcc;
+    padding: 10px;
+    font-size: 5vw;
+}
+
+.main-content {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.shoe-details h2 {
+    font-size: 5vw;
+    margin-bottom: 10px;
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.details p {
+    margin: 5px 0;
+    font-size: 4vw;
+}
+
+.sku-size {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.price-box {
+    text-align: center;
+}
+
+.price-box p:first-child {
+    font-size: 3.5vw;
+    margin-bottom: 5px;
+}
+
+.price-box p:last-child {
+    font-size: 5vw;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.liquidity {
+    margin-bottom: 20px;
+}
+
+#liquidity-bar {
+    width: 100%;
+}
+
+.next-sneaker {
+    text-align: center;
+}
+
+.next-sneaker button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 4vw;
+    width: 100%;
+}
+
+.next-sneaker button:hover {
+    background-color: #00ffcc;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .header h1 {
+        font-size: 6vw;
+    }
+
+    .shoe-details h2 {
+        font-size: 6vw;
+    }
+
+    .details p {
+        font-size: 5vw;
+    }
+
+    .price-box p:first-child {
+        font-size: 4vw;
+    }
+
+    .price-box p:last-child {
+        font-size: 6vw;
+    }
+
+    .next-sneaker button {
+        font-size: 5vw;
+    }
+}
