@@ -3,12 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const sku = params.get('sku');
     const size = params.get('size');
     
+    // Fetch data from the API
     fetch(`/shoe_details?sku=${sku}&size=${size}`)
         .then(response => response.json())
         .then(data => {
             if (data.error) {
                 alert(data.error);
             } else {
+                // Update the HTML elements with the data
                 document.getElementById("shoe-name").textContent = data.name;
                 document.getElementById("sku").textContent = data.sku;
                 document.getElementById("size").textContent = data.size;
@@ -22,9 +24,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         })
         .catch(error => console.error('Error fetching data:', error));
-    
-    document.getElementById("next-sneaker").addEventListener("click", () => {
-        // Implement logic to fetch the next sneaker details
-        console.log("Next sneaker button clicked");
-    });
 });
